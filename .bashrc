@@ -121,4 +121,4 @@ if ! shopt -oq posix; then
 fi
 eval "$(starship init bash)"
 export PATH="$PATH:$HOME/flutter/bin"
-export PATH="$PATH:/home/ninad/cmdline-tools/bin"
+export PATH="$PATH:$HOME/cmdline-tools/bin"
