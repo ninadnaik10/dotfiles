@@ -1,4 +1,8 @@
 # Aliases
+alias ..='cd ..'
+alias clr='clear'
+alias g='git'
+alias v='vim'
 alias tm='TERM=xterm-256color tmux -u'
 alias ll='ls -lah --color=auto'
 
