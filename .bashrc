@@ -1,3 +1,8 @@
+# Open tmux on session login
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
+# [[ $TERM != "screen" ]] && exec tmux
 # Aliases
 alias ..='cd ..'
 alias clr='clear'
@@ -96,7 +101,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+# alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
