@@ -4,6 +4,8 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 fi
 # [[ $TERM != "screen" ]] && exec tmux
 # Aliases
+alias prog='cd /mnt/mint-hdd/Programming'
+alias bashrc='vim ~/dotfiles/.bashrc'
 alias ..='cd ..'
 alias clr='clear'
 alias g='git'
@@ -131,3 +133,4 @@ fi
 eval "$(starship init bash)"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/cmdline-tools/bin"
+. "$HOME/.cargo/env"
