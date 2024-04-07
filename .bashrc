@@ -4,6 +4,7 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 fi
 # [[ $TERM != "screen" ]] && exec tmux
 # Aliases
+alias z2='sudo ~/scripts/a2dp.sh'
 alias prog='cd /mnt/mint-hdd/Programming'
 alias bashrc='vim ~/dotfiles/.bashrc'
 alias ..='cd ..'
@@ -134,3 +135,5 @@ eval "$(starship init bash)"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/cmdline-tools/bin"
 . "$HOME/.cargo/env"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
