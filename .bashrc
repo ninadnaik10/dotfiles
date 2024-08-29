@@ -4,8 +4,12 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 fi
 # [[ $TERM != "screen" ]] && exec tmux
 # Aliases
+alias sem7='cd "/run/media/ninad/Primary Storage HDD/Sem 7"'
+alias ds='sudo systemctl start docker'
+alias dcu='docker compose up -d'
+alias sd='sudo systemctl start docker'
 alias z2='sudo ~/scripts/a2dp.sh'
-alias prog='cd /mnt/mint-hdd/Programming'
+alias prog='cd /mnt/sda5/Programming'
 alias bashrc='vim ~/dotfiles/.bashrc'
 alias ..='cd ..'
 alias clr='clear'
@@ -137,3 +141,13 @@ export PATH="$PATH:$HOME/cmdline-tools/bin"
 . "$HOME/.cargo/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH=/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/bin:/home/ninad/cmdline-tools/bin
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export ANDROID_SDK_ROOT="$HOME/Android/cmdline-tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
+export PATH="$PATH:$ANDROID_SDK_ROOT/bin"
+export PATH="$PATH:~/Development/flutter/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
