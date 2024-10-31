@@ -151,3 +151,5 @@ export PATH="$PATH:~/Development/flutter/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=/home/ninad/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/bin:/home/ninad/cmdline-tools/bin:/home/ninad/Android/cmdline-tools/tools/bin:/home/ninad/Android/cmdline-tools/bin:~/Development/flutter/bin:/home/ninad/.pub-cache/bin
+alias clip=wl-copy
