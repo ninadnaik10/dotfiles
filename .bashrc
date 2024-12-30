@@ -140,9 +140,7 @@ export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/cmdline-tools/bin"
 . "$HOME/.cargo/env"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH=/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/bin:/home/ninad/cmdline-tools/bin
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export ANDROID_SDK_ROOT="$HOME/Android/cmdline-tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/bin"
@@ -151,5 +149,8 @@ export PATH="$PATH:~/Development/flutter/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH=/home/ninad/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/bin:/home/ninad/cmdline-tools/bin:/home/ninad/Android/cmdline-tools/tools/bin:/home/ninad/Android/cmdline-tools/bin:~/Development/flutter/bin:/home/ninad/.pub-cache/bin
+export PATH=/home/ninad/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/flutter/bin:/home/ninad/cmdline-tools/bin:/home/ninad/Android/cmdline-tools/tools/bin:/home/ninad/Android/cmdline-tools/bin:~/Development/flutter/bin:/home/ninad/.pub-cache/bin:/home/ninad/Android/android-studio/bin:/home/ninad/Android/Sdk/cmdline-tools/latest/bin
 alias clip=wl-copy
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+. "/home/ninad/.deno/env"

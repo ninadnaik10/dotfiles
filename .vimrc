@@ -82,3 +82,4 @@ set noshowmode
 set ttimeout ttimeoutlen=50
 
 
+execute pathogen#infect()
