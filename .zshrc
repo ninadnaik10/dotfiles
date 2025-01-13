@@ -182,9 +182,12 @@ _comp_options+=(globdots)
 # Vi mode
 bindkey -v
 export KEYTIMEOUT=1
-export PATH=/home/ninad/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/flutter/bin:/home/ninad/cmdline-tools/bin:/home/ninad/Android/cmdline-tools/tools/bin:/home/ninad/Android/cmdline-tools/bin:~/Development/flutter/bin:/home/ninad/.pub-cache/bin:/home/ninad/Android/android-studio/bin:/home/ninad/Android/Sdk/cmdline-tools/latest/bin:/usr/local/go/bin:/home/ninad/Android/Sdk/platform-tools/
+export PATH=/home/ninad/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/ninad/.local/bin:/mnt/mint-hdd/Programming/Python/yolo-env/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ninad/flutter/flutter/bin:/home/ninad/cmdline-tools/bin:/home/ninad/Android/cmdline-tools/tools/bin:/home/ninad/Android/cmdline-tools/bin:~/Development/flutter/bin:/home/ninad/.pub-cache/bin:/home/ninad/Android/android-studio/bin:/home/ninad/Android/Sdk/cmdline-tools/latest/bin:/usr/local/go/bin:/home/ninad/Android/Sdk/platform-tools:/home/ninad/.cargo/bin
 # export PYENV_ROOT="$HOME/.pyenv"
 # [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 eval "$(zoxide init --cmd cd zsh)"
 nvm use 22 > /dev/null
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
