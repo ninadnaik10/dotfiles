@@ -145,7 +145,7 @@ install_tmux_plugins() {
 # JetBrains Mono Nerd Font
 # ---------------------------------------------------------------------------
 install_font() {
-  if fc-list | grep -q "JetBrainsMono Nerd Font"; then
+  if fc-list | grep "JetBrainsMono Nerd Font" >/dev/null; then
     info "JetBrainsMono Nerd Font already installed"
   else
     info "Installing JetBrainsMono Nerd Font"
@@ -166,14 +166,14 @@ set_terminal_font() {
   local font="$FONT_NAME $FONT_SIZE"
 
   # Ptyxis (default terminal on Fedora 41+ / GNOME)
-  if gsettings list-schemas 2>/dev/null | grep -qx org.gnome.Ptyxis; then
+  if gsettings list-schemas 2>/dev/null | grep -x org.gnome.Ptyxis >/dev/null; then
     info "Setting Ptyxis font to $font"
     gsettings set org.gnome.Ptyxis use-system-font false
     gsettings set org.gnome.Ptyxis font-name "$font"
   fi
 
   # GNOME Terminal
-  if gsettings list-schemas 2>/dev/null | grep -qx org.gnome.Terminal.ProfilesList; then
+  if gsettings list-schemas 2>/dev/null | grep -x org.gnome.Terminal.ProfilesList >/dev/null; then
     local profile
     profile="$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "'")"
     if [ -n "$profile" ]; then
